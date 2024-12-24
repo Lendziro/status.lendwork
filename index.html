@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziro13 | Store & Community</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('https://media.discordapp.net/attachments/1228523818759491624/1320884010712432763/20241224_054040.jpg?ex=676b3898&is=6769e718&hm=6a000057f80b3540417608dad592c0ab055813b8e7cd55b1273752a94c2369e9&') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Watermark Logo as Background */
+        .watermark {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 150px;
+            height: auto;
+            opacity: 0.1;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Banner styles */
+        .banner {
+            width: 100%; /* This makes the banner full width */
+            max-width: 1200px; /* Set a max width for the banner */
+            margin: 0 auto; /* Center the banner */
+            margin-bottom: 30px;
+        }
+
+        .banner img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Container for the panels */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            background: rgba(27, 27, 43, 0.8);
+            border-radius: 15px;
+            padding: 30px;
+            margin: auto;
+            position: relative;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Centered Header Text */
+        .header-text {
+            text-align: center;
+            color: #00e676;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 15px;
+            position: relative;
+        }
+
+        .header-text span {
+            font-size: 24px;
+            color: #fff; /* Changed to white */
+            display: block;
+            margin-top: 10px;
+            animation: fadeText 5s ease-in-out infinite;
+        }
+
+        /* Animation for subtitle */
+        @keyframes fadeText {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #00e676;
+            text-align: center;
+            margin: 30px 0 20px;
+        }
+
+        .status {
+            background: rgba(35, 35, 61, 0.9);
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .status:hover {
+            background: linear-gradient(135deg, #2d2d47, #3e3e6a);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .status h3 {
+            font-size: 18px;
+        }
+
+        .status-icon {
+            font-size: 24px;
+            color: #00e676;
+        }
+
+        .ping-signal-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .ping-bar {
+            width: 10px;
+            height: 25px;
+            margin-right: 5px;
+            background-color: #00e676;
+        }
+
+        .ping-info {
+            font-size: 14px;
+            color: #ccc;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #bbb;
+        }
+
+        footer a {
+            color: #00e676;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Watermark Logo -->
+    <img src="https://media.discordapp.net/attachments/1228523818759491624/1320891300450402304/20241224_061005.png?ex=676b3f63&is=6769ede3&hm=cfd9e0f7c43063e46812612467f4e4e4b789509ac735a942b275d57a3dbcaebc&" class="watermark" alt="Watermark Logo">
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="https://media.discordapp.net/attachments/1228523818759491624/1320811805559230565/20241218_150841.jpg?ex=676af559&is=6769a3d9&hm=178fc8790613a86185b57ec917197b2b3dab852daed7ab5871059f557949c9da&" alt="Banner">
+    </div>
+
+    <!-- Header Text -->
+    <div class="header-text">
+        Server & Produk Status
+        <span>Memantau server & produk secara real-time</span>
+    </div>
+
+    <div class="container">
+        <!-- Status Server -->
+        <div class="section-title">STATUS SERVER</div>
+        <div class="status">
+            <h3>Game Panel</h3>
+            <div class="status-icon">Online</div>
+            <div class="ping-signal-container">
+                <div class="ping-bar"></div>
+                <div class="ping-bar"></div>
+                <div class="ping-bar"></div>
+                <div class="ping-bar"></div>
+                <div class="ping-bar"></div>
+            </div>
+            <div class="ping-info">98m ago</div>
+        </div>
+        <div class="status">
+            <h3>Data Center</h3>
+            <div class="status-icon">Offline</div>
+            <div class="ping-signal-container">
+                <div class="ping-bar"></div>
+                <div class="ping-bar"></div>
+                <div class="ping-bar"></div>
+                <div class="ping-bar"></div>
+                <div class="ping-bar"></div>
+            </div>
+            <div class="ping-info">86m ago</div>
+        </div>
+        <div class="status">
+            <h3>PHPMyAdmin</h3>
+            <div class="status-icon">Online</div>
+            <div class="ping-signal-container">
+                <div class="ping-bar"></div>
+                <div class="ping-bar"></div>
+                <div class="ping-bar"></div>
+                <div class="ping-bar"></div>
+                <div class="ping-bar"></div>
+            </div>
+            <div class="ping-info">34m ago</div>
+        </div>
+        <div class="status">
+            <h3>Node Indonesia</h3>
+            <div class="status-icon">Online</div>
+            <div class="ping-signal-container">
+                <div class="ping-bar"></div>
+                <div class="ping-bar"></div>
+                <div class="ping-bar"></div>
+                <div class="ping-bar"></div>
+                <div class="ping-bar"></div>
+            </div>
+            <div class="ping-info">12m ago</div>
+        </div>
+
+        <!-- Produk Network -->
+        <div class="section-title">STOCK LENDWORK</div>
+        <div class="status">
+            <h3>Samp Budget</h3>
+            <div class="status-icon">Tersedia</div>
+        </div>
+        <div class="status">
+            <h3>Samp Extra</h3>
+            <div class="status-icon">Tersedia</div>
+        </div>
+        <div class="status">
+            <h3>Bot Hosting</h3>
+            <div class="status-icon">Tersedia</div>
+        </div>
+
+        <!-- Discord Link -->
+        <footer>
+            <a href="https://discord.com/invite/KuKg4BdSfw" target="_blank">Gabung ke Discord Kami</a>
+        </footer>
+    </div>
+</body>
+</html>
